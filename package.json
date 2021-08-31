@@ -6,7 +6,7 @@
   "homepage": "https://IlyaKaplan2002.github.io/Team-1",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Team-1/"
   },
   "repository": {
     "type": "git",
