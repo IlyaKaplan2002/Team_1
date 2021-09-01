@@ -7,7 +7,7 @@
     border: none;
 }
 
-.button--inverced {
+.button--inversed {
     @extend .button;
     color: getColor('accent-color');
     background-color: getColor('white');
