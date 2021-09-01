@@ -50,3 +50,12 @@
 @mixin animation($property) {
     transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@mixin font($weight, $size, $height, $spacing) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;    
+    letter-spacing: $spacing;
+}
