@@ -1,0 +1,15 @@
+.button {
+    width: 260px;
+    padding: 14px 0;
+    @extend %buttons;
+    color: getColor('white');
+    background-color: getColor('accent-color');
+    border: none;
+}
+
+.button--inverced {
+    @extend .button;
+    color: getColor('accent-color');
+    background-color: getColor('white');
+    border: 2px solid getColor('accent-color');
+}
