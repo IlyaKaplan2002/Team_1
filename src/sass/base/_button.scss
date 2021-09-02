@@ -1,0 +1,15 @@
+.button {
+    width: 260px;
+    padding: 14px 0;
+    @extend %buttons;
+    color: var(--white);
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.button--inversed {
+    @extend .button;
+    color: var(--accent-color);
+    background-color: var(--white);
+    border: 2px solid var(--accent-color);
+}
