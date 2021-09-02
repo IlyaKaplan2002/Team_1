@@ -52,8 +52,7 @@
 }
 
 @mixin font($weight, $size, $height:24px, $spacing:0.01) {
-    font-family: Montserrat;
-    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
     font-weight: $weight;
     font-size: $size;
     line-height: $height;    
