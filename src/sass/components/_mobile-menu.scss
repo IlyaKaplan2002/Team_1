@@ -1,0 +1,56 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--mobile-menu-bg);
+    transform: translate(100%);
+    @include animation(transform);
+
+    &.is-open {
+        transform: translate(0);
+    }
+    
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        display: block;
+    }
+
+    &__close-menu {
+        background-color: inherit;
+        display: block;
+    }
+
+    &__links {
+        margin: 49.39px auto 0 auto;
+    }
+
+    &__item {
+        @include font(800, 20px, 180%, 0.03);
+        text-align: center;
+    }
+    
+    &__link {
+        color: var(--white);
+        @include animation(color);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
+
+    &__button {
+        display: block;
+        margin: 50px auto 0 auto;
+        background-color: inherit;
+    }
+}
