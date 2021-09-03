@@ -1,11 +1,12 @@
 .guarantee {
   &__title {
-    width: 280px;
     font-weight: 800;
     font-size: 26px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text);
+
+    margin-bottom: 30px;
   }
 
   &__container {
@@ -14,20 +15,24 @@
 
   &__list {
     list-style: none;
+    padding: 50px 20px;
   }
 
   &__item {
     display: block;
     margin-bottom: 23px;
+    position: relative;
+    align-items: center;
   }
 
   &__icon {
     width: 14px;
     height: 20px;
+    position: absolute;
+    left: -30px;
   }
 
   &__text {
-    width: 245px;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;

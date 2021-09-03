@@ -8,8 +8,11 @@
     letter-spacing: 0.03em;
     color: var(--main-text);
 
-    margin-top: 50px;
     margin-bottom: 24px;
+  }
+
+  &__article {
+    align-items: center;
   }
 
   &__image {
@@ -60,11 +63,19 @@
     margin-bottom: 62px;
   }
 
+  &__slider {
+    padding: 0 35px;
+  }
+
   &__item {
-    display: flex;
+    display: inline-block;
 
     &:not(:last-child) {
       margin-right: 10px;
     }
+  }
+
+  &__slider-icon {
+    width: 25px;
   }
 }

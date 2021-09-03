@@ -415,6 +415,125 @@ button {
   text-decoration: underline;
 }
 
+.guarantee__title {
+  font-weight: 800;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text);
+  margin-bottom: 30px;
+}
+
+.guarantee__container {
+  background-color: var(--guarantee-bg);
+}
+
+.guarantee__list {
+  list-style: none;
+  padding: 50px 20px;
+}
+
+.guarantee__item {
+  display: block;
+  margin-bottom: 23px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guarantee__icon {
+  width: 14px;
+  height: 20px;
+  position: absolute;
+  left: -30px;
+}
+
+.guarantee__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--problems-icon);
+}
+
+.feedback__title {
+  width: 280px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text);
+  margin-bottom: 24px;
+}
+
+.feedback__article {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__image {
+  margin: 0 auto;
+}
+
+.feedback__social-link {
+  margin: 0 auto;
+}
+
+.feedback__icon {
+  width: 30px;
+  height: 17px;
+}
+
+.feedback__name {
+  width: 225px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--accent-color);
+  margin-bottom: 16px;
+}
+
+.feedback__text {
+  width: 240px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--second-text);
+  margin-bottom: 16px;
+}
+
+.feedback__excerpt {
+  width: 240px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--problems-icon);
+  margin-bottom: 62px;
+}
+
+.feedback__slider {
+  padding: 0 35px;
+}
+
+.feedback__item {
+  display: inline-block;
+}
+
+.feedback__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.feedback__slider-icon {
+  width: 25px;
+}
+
 .registration {
   width: 100%;
   max-width: 320px;
