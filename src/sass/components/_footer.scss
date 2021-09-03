@@ -1,0 +1,13 @@
+.footer {
+  padding: 21px 0;
+  background-color: var(--main-text);
+
+  &__container {
+    text-align: center;
+  }
+
+  &__text {
+    @include font(500, 14px, 28px, 0.08em);
+    color: var(--second-text);
+  }
+}
