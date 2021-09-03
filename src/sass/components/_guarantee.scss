@@ -1,0 +1,36 @@
+.guarantee {
+  &__title {
+    width: 280px;
+    font-weight: 800;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+  }
+
+  &__container {
+    background-color: var(--guarantee-bg);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 23px;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 20px;
+  }
+
+  &__text {
+    width: 245px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--problems-icon);
+  }
+}

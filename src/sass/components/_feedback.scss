@@ -1,0 +1,70 @@
+.feedback {
+  &__title {
+    width: 280px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text);
+
+    margin-top: 50px;
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    margin: 0 auto;
+  }
+
+  &__social-link {
+    margin: 0 auto;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 17px;
+  }
+
+  &__name {
+    width: 225px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    width: 240px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--second-text);
+
+    margin-bottom: 16px;
+  }
+
+  &__excerpt {
+    width: 240px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--problems-icon);
+
+    margin-bottom: 62px;
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

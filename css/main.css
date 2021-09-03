@@ -169,9 +169,11 @@ button {
 }
 
 .hero {
+  padding: 50px 0 73px;
   background-image: url("../images/background-icons/hero-wave.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom -26px left -64px;
 }
 
 .hero__title {
@@ -279,6 +281,140 @@ button {
   background-color: inherit;
 }
 
+.advantages {
+  padding: 6px 0 50px;
+  margin: 0 52px;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.advantages__description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 164.9%;
+  letter-spacing: 0.08em;
+  color: var(--main-text);
+}
+
+.advantages__wrapper {
+  border: 2px solid var(--accent-color);
+  padding: 10px 13px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.advantages__span {
+  display: block;
+  background-color: var(--white);
+  height: 46px;
+  width: 2px;
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.advantages__icon {
+  width: 35px;
+  height: 40px;
+}
+
+.about {
+  padding-bottom: 0;
+}
+
+.about__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: var(--main-text);
+  margin-bottom: 20px;
+}
+
+.about__image {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.about__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: var(--main-text);
+  margin-bottom: 10px;
+}
+
+.about__list {
+  border-top: 1px solid var(--second-text);
+}
+
+.about__item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: var(--main-text);
+  margin-top: 20px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.about__icon {
+  position: absolute;
+  width: 17px;
+  height: 14px;
+  left: 0px;
+  top: 2px;
+}
+
+.about__desc {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.01;
+  color: var(--second-text);
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.about__desc::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: var(--accent-color);
+}
+
+.about__link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.01;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .registration {
   width: 100%;
   max-width: 320px;
@@ -367,86 +503,60 @@ button {
   margin: 50px auto 0;
 }
 
-.about {
-  padding-bottom: 0;
+.pre-footer {
+  padding: 30px 0px;
 }
 
-.about__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 130%;
-  letter-spacing: 0.03em;
-  color: var(--main-text);
-  margin-bottom: 20px;
+.pre-footer__logo {
+  display: block;
+  text-align: center;
 }
 
-.about__subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  color: var(--main-text);
-  margin-top: 20.42px;
-  margin-bottom: 10px;
-}
-
-.about__list {
-  border-top: 1px solid var(--second-text);
-}
-
-.about__item {
+.pre-footer__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 21.88px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  letter-spacing: 0.06em;
-  color: var(--main-text);
-  margin-top: 20px;
-  position: relative;
-  padding-left: 25px;
+  letter-spacing: 0.08em;
+  color: var(--main-color);
 }
 
-.about__item::before {
-  content: '';
+.pre-footer__tel-icon {
+  margin-right: 10px;
+}
+
+.pre-footer__inst {
+  margin: 30px auto 0;
   display: block;
-  position: absolute;
-  width: 17px;
-  height: 14px;
-  left: 0px;
-  background-image: url("../images/mobile/teacher/check-icon.svg");
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/background-icons/instagram.svg);
+  background-size: 40px;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.about__desc {
+.footer {
+  padding: 21px 0;
+  background-color: var(--main-text);
+}
+
+.footer__text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.01;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0.08em;
   color: var(--second-text);
-  margin-bottom: 10px;
-}
-
-.about__desc::before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  margin-bottom: 15px;
-  margin-top: 30px;
-  background-color: var(--accent-color);
-}
-
-.about__link {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.01;
-  color: var(--accent-color);
-  text-decoration: underline;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
