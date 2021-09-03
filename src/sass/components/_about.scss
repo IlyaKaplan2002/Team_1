@@ -1,15 +1,20 @@
 .about {
   padding-bottom: 0;
+
   &__title {
     @include font(800, 20px, 130%, 0.03em);
     color: var(--main-text);
     margin-bottom: 20px;
   }
 
+  &__image {
+    display: block;
+    margin-bottom: 20px;
+  }
+
   &__subtitle {
     @include font(800, 20px, 24px, 0.08em);
     color: var(--main-text);
-    margin-top: 20.42px;
     margin-bottom: 10px;
   }
 
@@ -37,6 +42,7 @@
     @include font(500, 12px, 20px);
     color: var(--second-text);
     margin-bottom: 10px;
+    margin-top: 30px;
   }
 
   &__desc::before {
@@ -45,7 +51,6 @@
     width: 20px;
     height: 2px;
     margin-bottom: 15px;
-    margin-top: 30px;
     background-color: var(--accent-color);
   }
 
