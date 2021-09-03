@@ -1,0 +1,16 @@
+.page-header {
+    margin-top: 30.5px;
+
+    &__logo {
+        display: block;
+    }
+
+    &__mobile-menu {
+        display: block;
+    }
+
+   &__nav {
+       display: flex;
+       justify-content: space-between;
+   } 
+}
