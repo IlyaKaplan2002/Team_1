@@ -1,7 +1,9 @@
 .hero {
+    padding: 50px 0 73px;
     background-image: url("../images/background-icons/hero-wave.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom -26px left -64px;
 
     &__title {
         @include font(800, 20px, 130%, 0.03em);
