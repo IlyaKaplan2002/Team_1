@@ -1,0 +1,32 @@
+.benefits {
+  padding-bottom: 0;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 70%, rgb(255, 255, 255) 50%);
+  background-color: var(--main-text);
+
+  &__title {
+    @include font(800, 20px, 136%, 0.03em);
+    color: var(--white);
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    background-color: var(--white);
+    @extend %problems-shadow;
+    padding: 20px 14px 20px 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  &__subtitle {
+    @include font(700, 14px, 164.9%, 0.08em);
+    color: var(--accent-color);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include font(700, 14px, 20px, 0.08em);
+    color: var(--main-text);
+  }
+}
