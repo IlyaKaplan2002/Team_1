@@ -1,0 +1,34 @@
+.hero {
+    background-image: url("../images/background-icons/hero-wave.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        @include font(800, 20px, 130%, 0.03em);
+        color: var(--main-text);
+    }
+    
+    &__text {
+        margin-top: 8px;
+        @include font(700, 14px, 157%, 0.08em);
+        color: var(--main-text);
+
+        &--secondary {
+            font-weight: 500;
+            color: var(--second-text);
+        }
+
+        &--accent {
+            color: var(--accent-color);
+        }
+    }
+
+    &__button {
+        margin: 52px auto 0;
+    }
+
+    &__image {
+        display: block;
+        margin: 55px auto 0;
+    }
+}
