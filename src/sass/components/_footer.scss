@@ -4,7 +4,7 @@
 
   &__container {
     @media screen and (min-width: 768px) {
-      padding: 0 40px;
+      // padding: 0 40px;
     }
   }
 
@@ -14,10 +14,6 @@
 
     @media screen and (max-width: 767px) {
       text-align: center;
-    }
-
-    @media screen and (min-width: 768px) {
-      @include font(500, 14px, 28px, 0.08em);
     }
   }
 }
