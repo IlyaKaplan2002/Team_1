@@ -6,6 +6,8 @@
     background-position: bottom -26px left -64px;
 
     @media screen and (min-width:768px) {
+        background-position: bottom -10px left -64px;
+
         &__container {
             display: flex;
             align-items: center;
@@ -48,5 +50,9 @@
     &__image {
         display: block;
         margin: 55px auto 0;
+
+        @media screen and (min-width:768px) {
+            margin: 0;
+        }
     }
 }
