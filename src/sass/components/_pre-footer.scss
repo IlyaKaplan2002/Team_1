@@ -7,12 +7,19 @@
     padding: 40px 0;
   }
 
+  &__contacts {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
   &__container {
     // ................TABLET...............
 
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
   }
 
@@ -20,10 +27,6 @@
     @media screen and (max-width: 767px) {
       display: block;
       text-align: center;
-    }
-
-    @media screen and (min-width: 768px) {
-      margin-right: 203px;
     }
   }
 
@@ -54,7 +57,7 @@
     @media screen and (min-width: 768px) {
       margin-right: 48px;
 
-      @include font(600, 20px, 24px, 0.08em);
+      font-size: 20px;
     }
 
     &::after {
@@ -62,11 +65,15 @@
       position: absolute;
       display: block;
       right: -24px;
-
+      
       width: 1px;
       height: 40px;
-
+      
       background-color: var(--second-text);
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
 
     &-icon {
