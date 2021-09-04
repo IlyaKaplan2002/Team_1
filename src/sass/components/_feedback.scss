@@ -1,0 +1,92 @@
+.feedback {
+  padding-top: 0;
+
+  &__article {
+    margin-bottom: 62px;
+  }
+
+  &__title {
+    @include font(800, 12px, 130%, 0.03em);
+    text-align: center;
+    color: var(--main-text);
+
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 24px;
+  }
+
+  &__social-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__name {
+    @include font(800, 14px, 17px, 0.08em);
+    text-align: center;
+    color: var(--accent-color);
+
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    @include font(500, 12px, 15px, 0.08em);
+    text-align: center;
+    color: var(--second-text);
+
+    margin-bottom: 16px;
+  }
+
+  &__excerpt {
+    @include font(500, 12px, 167%);
+    text-align: center;
+    color: var(--problems-icon);
+  }
+
+  &__read-more {
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slider-button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+
+  &__slider-icon {
+    width: 25px;
+    height: 16px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
