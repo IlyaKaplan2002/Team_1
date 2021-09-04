@@ -5,17 +5,17 @@
   margin-right: auto;
   margin-left: auto;
   @include mq(mobile) {
-    max-width: 480px;
+    max-width: var(--mobile);
     margin-right: auto;
     margin-left: auto;
   }
   @include mq(tablet) {
-    max-width: 768px;
+    max-width: var(--tablet);
     padding-left: 30px;
     padding-right: 30px;
   }
   @include mq(desktop) {
-    max-width: 1366px;
+    max-width: var(--desktop);
     padding-left: 15px;
     padding-right: 15px;
   }
