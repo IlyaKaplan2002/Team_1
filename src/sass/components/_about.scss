@@ -7,9 +7,29 @@
     margin-bottom: 20px;
   }
 
+  @media screen and(min-width: 768px) {
+    &__title {
+      font-size: 26px;
+    }
+  }
+
   &__image {
     display: block;
     margin-bottom: 20px;
+  }
+
+  @media screen and(min-width: 768px) {
+    &__image {
+      position: absolute;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    &__wrapper {
+      position: relative;
+      left: 290px;
+      width: 400px;
+    }
   }
 
   &__subtitle {
@@ -31,6 +51,12 @@
     padding-left: 25px;
   }
 
+  @media screen and(min-width: 768px) {
+    &__item {
+      font-size: 12px;
+    }
+  }
+
   &__icon {
     position: absolute;
     width: 17px;
@@ -44,6 +70,12 @@
     color: var(--second-text);
   }
 
+  @media screen and(min-width: 768px) {
+    &__desc {
+      font-size: 10px;
+    }
+  }
+
   &__desc:first-of-type::before {
     content: '';
     display: block;
@@ -53,37 +85,12 @@
     background-color: var(--accent-color);
   }
 
-  &__p-link {
-    margin-top: 10px;
-  }
-
   &__link {
     @include font(500, 12px, 20px);
     color: var(--accent-color);
     text-decoration: underline;
-  }
-}
 
-@media screen and(min-width: 768px) {
-  .about__title {
-    @include font(800, 26px, 130%, 0.03em);
-  }
-
-  .about__image {
-    position: absolute;
-  }
-
-  .about__wrapper {
-    position: relative;
-    left: 290px;
-    width: 400px;
-  }
-
-  .about__item {
-    @include font(600, 12px, 15px, 0.06em);
-  }
-
-  .about__desc {
-    @include font(500, 10px, 20px);
+    display: block;
+    margin-top: 10px;
   }
 }
