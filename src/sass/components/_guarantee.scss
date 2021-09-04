@@ -1,9 +1,7 @@
 .guarantee {
   &__title {
-    font-weight: 800;
-    font-size: 26px;
+    @include font(800, 26px, 130%, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--main-text);
 
     margin-bottom: 30px;
@@ -14,8 +12,7 @@
   }
 
   &__list {
-    list-style: none;
-    padding: 50px 20px;
+    padding: 50px 20px 50px 35px;
   }
 
   &__item {
@@ -26,10 +23,12 @@
   }
 
   &__icon {
-    width: 14px;
+    width: 15px;
     height: 20px;
     position: absolute;
-    left: -30px;
+    // left: -35px;
+    left: -35px;
+    top: 0;
   }
 
   &__text {
@@ -37,5 +36,20 @@
     font-size: 12px;
     line-height: 20px;
     color: var(--problems-icon);
+  }
+
+  &__accent {
+    color: var(--accent-color);
+  }
+
+  &__left-border {
+    display: block;
+    height: 48px;
+    width: 0;
+    border-left: 1px dashed var(--second-text);
+
+    position: absolute;
+    top: 50%;
+    left: -29px;
   }
 }
