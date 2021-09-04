@@ -32,9 +32,7 @@
   }
 
   &__text {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
+    @include font(500, 12px, 167%);
     color: var(--problems-icon);
   }
 
