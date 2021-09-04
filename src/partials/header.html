@@ -1,21 +1,27 @@
 <header class="page-header">
   <div class="container page-header__container">
     <nav class="page-header__nav">
-      <a href="#" class="page-header__logo logo"
-        ><svg class="logo__icon" width="80px" height="29.14px">
+      <a href="#" class="page-header__logo"
+        ><svg class="page-header__logo-icon">
           <use href=" images/icons.svg#icon-logo-black"></use>
         </svg>
       </a>
 
-      <button
-        class="page-header__mobile-menu mobile-menu-button"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="mobile-menu-button__icon" stroke="#000000" width="20.5px" height="12px">
-          <use href=" images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
+      <div class="page-header__wrapper">
+        <button type="button" class="button--inversed page-header__button">
+          Consultation by phone
+        </button>
+
+        <button
+          class="page-header__mobile-menu mobile-menu-button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-button__icon" stroke="#000000" width="20.5px" height="12px">
+            <use href=" images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
 </header>
