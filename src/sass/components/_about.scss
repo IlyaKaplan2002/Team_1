@@ -23,7 +23,7 @@
       position: absolute;
     }
   }
-  
+
   @media screen and (min-width: 768px) {
     &__wrapper {
       position: relative;
@@ -92,5 +92,46 @@
 
     display: block;
     margin-top: 10px;
+  }
+
+  @media (min-width: 1366px) {
+    &__title {
+      @include font(800, 46px, 130%, 0.03em);
+      margin-bottom: 50px;
+    }
+
+    &__image {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    &__wrapper {
+      width: 650px;
+      left: 570px;
+    }
+
+    &__subtitle {
+      @include font(800, 30px, 37px, 0.08em);
+    }
+
+    &__list {
+      margin-bottom: 45px;
+    }
+
+    &__item {
+      @include font(600, 16px, 20px, 0.06em);
+      margin-top: 30px;
+    }
+
+    &__desc {
+      @include font(500, 18px, 28px);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      @include font(500, 18px, 28px);
+      margin-top: 75px;
+    }
   }
 }
