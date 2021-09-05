@@ -34,3 +34,40 @@
     color: var(--main-text);
   }
 }
+//------------TABLET -----------------//
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .problems {
+    background-image: url(../images/background-icons/tablet-firecamp.svg),
+      linear-gradient(180deg, rgb(17, 21, 24) 59%, rgb(255, 255, 255) 30%);
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    background-position: bottom 80% right;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 28px 108px 28px 108px;
+    }
+
+    &__item {
+      width: 236px;
+    }
+
+    &__item {
+      margin-bottom: 38px;
+    }
+
+    &__item:nth-child(n + 5) {
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      margin-bottom: 18px;
+    }
+  }
+}
