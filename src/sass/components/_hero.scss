@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-position: bottom -26px left -64px;
 
+    @media screen and (min-width:1366px) {
+        padding: 46px 0 107px;
+    }
+
     @media screen and (min-width:768px) {
         background-size: cover;
         background-position: bottom -10px left 0;
@@ -16,12 +20,27 @@
         }
     }
 
+    @media screen and (min-width:1366px) {
+        &__container {
+            align-items: start;
+        }
+    }
+
     &__title {
         @include font(800, 20px, 130%, 0.03em);
         color: var(--main-text);
 
-        @media screen and (min-width:768px) {
+    }
+
+    @media screen and (min-width:768px) {
+        &__title{
             font-size: 26px;
+        }
+    }
+
+    @media screen and (min-width:1366px) {
+        &__title{
+            font-size: 58px;
         }
     }
     
@@ -40,19 +59,29 @@
         }
     }
 
+    @media screen and (min-width:1366px) {
+        &__text{
+            font-size: 20px;
+        }
+    }
+
     &__button {
         margin: 52px auto 0;
+    }
 
-        @media screen and (min-width:768px) {
-            margin-left: 42px;
+    @media screen and (min-width:768px) {
+        &__button {
+            margin-left: 0;
         }
     }
 
     &__image {
         display: block;
         margin: 55px auto 0;
+    }
 
-        @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) {
+        &__image {
             margin: 0;
         }
     }

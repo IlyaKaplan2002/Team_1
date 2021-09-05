@@ -1,13 +1,27 @@
 .advantages {
     padding: 6px 0 50px;
     margin: 0 52px;
+
+    @media screen and (min-width:768px) {
+        &__list {
+            display: flex;
+        }
+    }
     
     &__item {
         display: flex;
         align-items: center;
+    }
 
-        &:not(:last-child) {
+    @media screen and (max-width:767px) {
+        &__item:not(:last-child) {
             margin-bottom: 25px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__item:not(:last-child) {
+            margin-right: 21px;
         }
     }
 
@@ -27,10 +41,10 @@
         display: block;
         background-color: var(--white);
         height: 46px;
-        width: 2px;
+        width: 4px;
 
         position: absolute;
-        right: -2px;
+        right: -3px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -38,5 +52,6 @@
     &__icon {
         width: 35px;
         height: 40px;
+        fill: var(--accent-color);
     }
 }
