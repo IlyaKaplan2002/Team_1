@@ -98,6 +98,12 @@
         @include animation(color);
     }
 
+    @media screen and (min-width: 1366px) {
+        &__description {
+            font-size: 18px;
+        }
+    }
+
     &__item:hover &__description,
     &__item:focus &__description {
         color: var(--white);
