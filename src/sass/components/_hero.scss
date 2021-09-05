@@ -20,7 +20,10 @@
         @include font(800, 20px, 130%, 0.03em);
         color: var(--main-text);
 
-        @media screen and (min-width:768px) {
+    }
+
+    @media screen and (min-width:768px) {
+        &__title{
             font-size: 26px;
         }
     }
@@ -42,8 +45,10 @@
 
     &__button {
         margin: 52px auto 0;
+    }
 
-        @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) {
+        &__button {
             margin-left: 42px;
         }
     }
@@ -51,8 +56,10 @@
     &__image {
         display: block;
         margin: 55px auto 0;
-
-        @media screen and (min-width:768px) {
+    }
+    
+    @media screen and (min-width:768px) {
+        &__image {
             margin: 0;
         }
     }
