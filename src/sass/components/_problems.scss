@@ -37,15 +37,15 @@
 //------------TABLET -----------------//
 @media screen and (min-width: 768px) {
   .section {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
   }
   .problems {
     background-image: url(../images/background-icons/tablet-firecamp.svg),
-      linear-gradient(180deg, rgb(17, 21, 24) 59%, rgb(255, 255, 255) 30%);
+      linear-gradient(180deg, rgb(17, 21, 24) 65%, rgb(255, 255, 255) 30%);
     background-repeat: no-repeat;
     background-attachment: unset;
-    background-position: bottom 80% right;
-
+    background-position: bottom 94% right -5%;
+    background-color: var(--problems-icon);
     &__list {
       display: flex;
       flex-direction: row;
