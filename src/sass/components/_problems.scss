@@ -71,15 +71,13 @@
 }
 //------------DESKTOP -----------------//
 @media screen and (min-width: 1366px) {
-  .section {
-    padding: 60px 0 80px 0;
-  }
   .problems {
     background-image: url(../images/background-icons/tablet-firecamp.svg),
       linear-gradient(180deg, rgb(17, 21, 24) 65%, rgb(255, 255, 255) 30%);
     background-repeat: no-repeat;
     background-attachment: unset;
     background-position: bottom 82% right -2%;
+    padding: 100px 0 80px 0;
     &__list {
       display: flex;
       flex-direction: row;
