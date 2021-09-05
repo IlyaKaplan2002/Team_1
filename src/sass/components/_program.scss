@@ -5,30 +5,30 @@
   background-image: linear-gradient(180deg, rgb(17, 21, 24) 90%, rgb(255, 255, 255) 10%);
 
   &::after {
-      content: '';
-      position: absolute;
-      top: 60%;
-      right: -80px;
-      
-      background-image: url(../images/mobile/main-pic-mobile.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    top: 60%;
+    right: -80px;
 
-      opacity: 0.5;
-      width: 176px;
-      height: 137px;
+    background-image: url(../images/mobile/main-pic-mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/mobile/main-pic-mobile@2x.jpg);
-      }
+    opacity: 0.5;
+    width: 176px;
+    height: 137px;
 
-      @media screen and (min-width:480px) {
-        right: 0;
-      }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/main-pic-mobile@2x.jpg);
     }
+
+    @media screen and (min-width: 480px) {
+      right: 0;
+    }
+  }
 
   &__title {
     @include font(800, 20px, 130%, 0.03em);
@@ -98,4 +98,58 @@
 .point-list__item {
   @include font(500, 12px, 20px, 0.08em);
   color: var(--second-text);
+}
+
+@media screen and(min-width: 768px) {
+  .program {
+    padding-bottom: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 53%;
+      right: 0;
+
+      background-image: url(../images/tablet/main-pic-tablet.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      opacity: 0.5;
+      width: 384px;
+      height: 280px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/main-pic-tablet@2x.jpg);
+      }
+    }
+
+    &__title {
+      @include font(800, 26px, 130%, 0.03em);
+      text-align: start;
+    }
+    &__list {
+      margin-top: 52px;
+      margin-left: 159px;
+
+      &::before {
+        left: -50px;
+      }
+    }
+    &__subtitle::before {
+      left: -55px;
+    }
+  }
+
+  .description-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    &__item {
+      margin-right: 50px;
+      width: 130px;
+    }
+  }
 }
