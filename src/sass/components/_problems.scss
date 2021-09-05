@@ -42,7 +42,7 @@
       linear-gradient(180deg, rgb(17, 21, 24) 65%, rgb(255, 255, 255) 30%);
     background-repeat: no-repeat;
     background-attachment: unset;
-    background-position: bottom 94% right -5%;
+    background-position: bottom 76% right;
     background-color: var(--problems-icon);
     &__list {
       display: flex;
@@ -72,12 +72,17 @@
 //------------DESKTOP -----------------//
 @media screen and (min-width: 1366px) {
   .problems {
-    background-image: url(../images/background-icons/tablet-firecamp.svg),
-      linear-gradient(180deg, rgb(17, 21, 24) 65%, rgb(255, 255, 255) 30%);
+    background-image: url(../images/background-icons/noun_Campfire_2425646.svg),
+      linear-gradient(180deg, rgb(17, 21, 24) 70%, rgb(255, 255, 255) 30%);
     background-repeat: no-repeat;
     background-attachment: unset;
-    background-position: bottom 82% right -2%;
+    background-position: bottom 80% right;
     padding: 100px 0 80px 0;
+    &__title {
+      @include font(800, 46px, 130%, 0.03em);
+      color: var(--white);
+      margin-bottom: 70px;
+    }
     &__list {
       display: flex;
       flex-direction: row;
