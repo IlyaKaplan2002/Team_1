@@ -50,7 +50,8 @@
 
 @media screen and(min-width: 768px) {
   .benefits {
-    margin-top: 190px;
+    padding-top: 190px;
+    padding-bottom: 50px;
 
     &__title {
       @include font(800, 26px, 130%, 0.03em);
