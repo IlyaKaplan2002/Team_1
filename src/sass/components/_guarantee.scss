@@ -13,13 +13,20 @@
 
   &__list {
     padding: 50px 20px 50px 35px;
+
+    @media screen and(min-width: 768px) {
+      padding: 30px 50px 30px 118px;
+    }
   }
 
   &__item {
     display: block;
-    margin-bottom: 23px;
     position: relative;
     align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
   }
 
   &__icon {
@@ -28,6 +35,12 @@
     position: absolute;
     left: -35px;
     top: 0;
+  }
+
+  @media screen and (min-width:768px) {
+    &__icon {
+      left: -45px;
+    }
   }
 
   &__text {
@@ -48,5 +61,11 @@
     position: absolute;
     top: 50%;
     left: -29px;
+  }
+
+  @media screen and (min-width:768px) {
+    &__left-border{
+      left: -39px;
+    }
   }
 }

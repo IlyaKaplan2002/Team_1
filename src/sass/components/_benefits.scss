@@ -1,11 +1,17 @@
 .benefits {
   padding-bottom: 0;
-  background: linear-gradient(180deg, rgb(17, 21, 24) 70%, rgb(255, 255, 255) 30%);
+  z-index: 996;
 
   &__title {
     @include font(800, 20px, 136%, 0.03em);
     color: var(--white);
     margin-bottom: 30px;
+  }
+
+  @media screen and (max-width:480px) {
+    &__title {
+    width: 180px;
+    }
   }
 
   &__list {
@@ -32,7 +38,6 @@
 
 @media screen and(min-width: 768px) {
   .benefits {
-    background: linear-gradient(180deg, rgb(17, 21, 24) 45%, rgb(255, 255, 255) 30%);
 
     &__title {
       @include font(800, 26px, 130%, 0.03em);
@@ -57,12 +62,30 @@
       margin-bottom: 38px;
     }
 
-    &__item:nth-child(n+5) {
+    &__item:nth-child(n + 5) {
       margin-bottom: 0;
     }
 
     &__subtitle {
       margin-bottom: 18px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .benefits {
+    padding: 0;
+
+    &__item {
+      width: 336px;
+    }
+
+    &__title {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
     }
   }
 }

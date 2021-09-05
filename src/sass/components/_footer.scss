@@ -9,5 +9,9 @@
     @media screen and (max-width: 767px) {
       text-align: center;
     }
+
+    @media screen and (min-width: 1366px) {
+      line-height: 28px;
+    }
   }
 }
