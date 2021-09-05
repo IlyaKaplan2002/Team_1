@@ -7,7 +7,12 @@
     @include font(800, 24px, 130%, 0.03em);
     color: var(--white);
     margin-bottom: 25px;
+
+    @media screen and (min-width:1366px) {
+      font-size: 46px;
+    }
   }
+
 
   &__span {
     color: var(--accent-color);
@@ -24,14 +29,22 @@
   }
 
   &__subtitle {
-    @include font(700, 20px, 24px, 0.08em);
+    @include font(700, 14px, 24px, 0.08em);
     color: var(--accent-color);
     margin-bottom: 5px;
+
+    @media screen and (min-width:1366px) {
+      font-size: 20px;
+    }
   }
 
   &__description {
     @include font(700, 14px, 24px, 0.08em);
     color: var(--main-text);
+
+    @media screen and (min-width:1366px) {
+      font-size: 20px;
+    }
   }
 }
 //------------TABLET -----------------//
@@ -76,6 +89,7 @@
       linear-gradient(180deg, rgb(17, 21, 24) 70%, rgb(255, 255, 255) 30%);
     background-repeat: no-repeat;
     background-attachment: unset;
+
     background-position: bottom 80% right;
     padding: 100px 0 80px 0;
     &__title {
@@ -83,6 +97,7 @@
       color: var(--white);
       margin-bottom: 70px;
     }
+
     &__list {
       display: flex;
       flex-direction: row;
