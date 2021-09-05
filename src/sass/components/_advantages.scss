@@ -1,13 +1,27 @@
 .advantages {
     padding: 6px 0 50px;
     margin: 0 52px;
+
+    @media screen and (min-width:768px) {
+        &__list {
+            display: flex;
+        }
+    }
     
     &__item {
         display: flex;
         align-items: center;
+    }
 
-        &:not(:last-child) {
+    @media screen and (max-width:767px) {
+        &__item:not(:last-child) {
             margin-bottom: 25px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__item:not(:last-child) {
+            margin-right: 21px;
         }
     }
 
@@ -38,5 +52,6 @@
     &__icon {
         width: 35px;
         height: 40px;
+        fill: var(--accent-color);
     }
 }
