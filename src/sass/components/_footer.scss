@@ -5,13 +5,6 @@
   &__text {
     @include font(500, 14px, 200%, 0.08em);
     color: var(--second-text);
-
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
-
-    @media screen and (min-width: 1366px) {
-      line-height: 28px;
-    }
+    text-align: center;
   }
 }
