@@ -9,10 +9,6 @@
     transform: translate(100%);
     @include animation(transform);
 
-    // &__container {
-    //     max-width: 260px;
-    // }
-
     &.is-open {
         transform: translate(0);
     }
