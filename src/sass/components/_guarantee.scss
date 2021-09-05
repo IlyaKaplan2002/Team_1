@@ -13,10 +13,6 @@
 
   &__container {
     background-color: var(--guarantee-bg);
-
-    @media screen and (min-width: 1366px) {
-      background-color: var(--guarantee-bg);
-    }
   }
 
   &__list {
@@ -46,6 +42,7 @@
     position: absolute;
     left: -35px;
     top: 0;
+    z-index: 950;
   }
 
   @media screen and (min-width: 768px) {
@@ -54,9 +51,23 @@
     }
   }
 
+  @media screen and (min-width: 1366px) {
+    &__icon {
+      width: 22px;
+      height: 30px;
+      left: -42px;
+    }
+  }
+
   &__text {
     @include font(500, 12px, 167%);
     color: var(--problems-icon);
+  }
+
+  @media screen and (min-width: 1366px) {
+    &__text {
+      font-size: 20px;
+    }
   }
 
   &__accent {
@@ -77,6 +88,12 @@
   @media screen and (min-width: 768px) {
     &__left-border {
       left: -39px;
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    &__left-border {
+      left: -33px;
     }
   }
 }
