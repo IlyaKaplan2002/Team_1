@@ -5,10 +5,18 @@
     color: var(--main-text);
 
     margin-bottom: 30px;
+    @media screen and (min-width: 1366px) {
+      margin-top: 80px;
+      @include font(800, 46px, 60px, 0.03em);
+    }
   }
 
   &__container {
     background-color: var(--guarantee-bg);
+
+    @media screen and (min-width: 1366px) {
+      background-color: var(--guarantee-bg);
+    }
   }
 
   &__list {
@@ -16,6 +24,9 @@
 
     @media screen and(min-width: 768px) {
       padding: 30px 50px 30px 118px;
+    }
+    @media screen and (min-width: 1366px) {
+      padding: 50px 112px 45px 112px;
     }
   }
 
@@ -37,7 +48,7 @@
     top: 0;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     &__icon {
       left: -45px;
     }
@@ -63,8 +74,8 @@
     left: -29px;
   }
 
-  @media screen and (min-width:768px) {
-    &__left-border{
+  @media screen and (min-width: 768px) {
+    &__left-border {
       left: -39px;
     }
   }
