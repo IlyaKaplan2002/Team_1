@@ -1,9 +1,9 @@
 .feedback {
   padding-top: 0;
 
-  @media screen and(min-width: 1366px) {
-    padding-top: 80px;
-  }
+  // @media screen and(min-width: 1366px) {
+  //   padding-top: 80px;
+  // }
 
   &__title {
     margin-bottom: 24px;
@@ -98,9 +98,7 @@
     }
 
     @media screen and (min-width: 1366px) {
-      margin-bottom: 20px;
       @include font(800, 30px, 37px, 0.08em);
-      text-align: left;
     }
   }
 
@@ -160,6 +158,16 @@
         transform: translateX(50%);
       }
     }
+
+    @media screen and (min-width: 1366px) {
+      &--left {
+        left: -58px;
+      }
+
+      &--right {
+        right: -58px;
+      }
+    }
   }
 
   &__slider {
@@ -185,15 +193,15 @@
       display: none;
     }
 
-    @media screen and (min-width: 1366px) {
-      &--left {
-        left: -58px;
-      }
+    // @media screen and (min-width: 1366px) {
+    //   &--left {
+    //     left: -58px;
+    //   }
 
-      &--right {
-        right: -58px;
-      }
-    }
+    //   &--right {
+    //     right: -58px;
+    //   }
+    // }
   }
 
   &__slider-icon {
