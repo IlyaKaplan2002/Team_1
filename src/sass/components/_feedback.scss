@@ -3,6 +3,11 @@
 
   &__article {
     margin-bottom: 62px;
+
+    @media screen and(min-width: 768px) {
+      display: flex;
+      margin: 30px 40px;
+    }
   }
 
   &__title {
@@ -16,14 +21,29 @@
   &__image {
     display: block;
     margin: 0 auto 24px;
+
+    @media screen and(min-width: 768px) {
+      position: relative;
+      margin-left: 40px;
+    }
   }
 
   &__social-link {
     display: block;
     text-align: center;
     margin-bottom: 24px;
+
+    @media screen and(min-width: 768px) {
+      position: absolute;
+    }
   }
 
+  &__div {
+    @media screen and(min-width: 768px) {
+      width: 412px;
+      margin-left: 40px;
+    }
+  }
   &__icon {
     width: 30px;
     height: 30px;

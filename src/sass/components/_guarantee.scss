@@ -1,4 +1,8 @@
 .guarantee {
+  @media screen and(min-width: 768px) {
+    padding: 50px 40px;
+  }
+
   &__title {
     @include font(800, 26px, 130%, 0.03em);
     text-align: center;
@@ -9,17 +13,30 @@
 
   &__container {
     background-color: var(--guarantee-bg);
+
+    @media screen and(min-width: 768px) {
+      max-width: 688px;
+      padding: 30px 50px 30px 100px;
+    }
   }
 
   &__list {
     padding: 50px 20px 50px 35px;
+
+    @media screen and(min-width: 768px) {
+      padding: 0;
+    }
   }
 
   &__item {
     display: block;
-    margin-bottom: 23px;
+    // margin-bottom: 23px;
     position: relative;
     align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
   }
 
   &__icon {
