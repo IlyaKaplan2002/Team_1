@@ -2,10 +2,6 @@
   padding-bottom: 0px;
   padding-top: 0;
 
-  // @media screen and (min-width:1366px) {
-  //   padding-top: 200px;
-  // }
-
   @media screen and (min-width:768px) {
     &__cont-about-wrapper {
       display: flex;
@@ -143,6 +139,14 @@
 
     display: block;
     margin-top: 10px;
+
+    @include animation2(text-decoration, opacity);
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      text-decoration: none;
+    }
   }
 
   @media screen and (min-width: 1366px) {

@@ -1,10 +1,6 @@
 .feedback {
   padding-top: 0;
 
-  // @media screen and(min-width: 1366px) {
-  //   padding-top: 80px;
-  // }
-
   &__title {
     margin-bottom: 24px;
 
@@ -136,10 +132,33 @@
   &__read-more {
     text-decoration: underline;
     color: var(--accent-color);
+    @include animation2(text-decoration, opacity);
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      text-decoration: none;
+    }
   }
 
   &__article-button {
     display: none;
+    @include animation(transform);
+    cursor: pointer;
+
+    &--left {
+      &:hover,
+      &:focus {
+        transform: scaleX(1.5) translateX(-25%);
+      }
+    }
+
+    &--right {
+      &:hover,
+      &:focus {
+        transform: scaleX(1.5) translateX(25%);
+      }
+    }
 
     @media screen and (min-width: 768px) {
       display: block;
@@ -180,6 +199,8 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
+    @include animation(transform);
+    cursor: pointer;
 
     &--left {
       left: 0;
@@ -192,16 +213,6 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
-
-    // @media screen and (min-width: 1366px) {
-    //   &--left {
-    //     left: -58px;
-    //   }
-
-    //   &--right {
-    //     right: -58px;
-    //   }
-    // }
   }
 
   &__slider-icon {
