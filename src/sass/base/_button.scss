@@ -6,6 +6,8 @@
     color: var(--white);
     background-color: var(--accent-color);
     border: none;
+    cursor: pointer;
+    @include animation2(color, background-color);
 
     @media screen and (min-width:768px) {
         padding: 16px 5px;
@@ -17,9 +19,22 @@
     }
 }
 
+.button:hover,
+.button:focus {
+    color: var(--accent-color);
+    background-color: var(--white);
+    border: 2px solid var(--accent-color);
+}
+
 .button--inversed {
     @extend .button;
     color: var(--accent-color);
     background-color: var(--white);
     border: 2px solid var(--accent-color);
+
+    &:hover,
+    &:focus {
+        color: var(--white);
+        background-color: var(--accent-color);
+    }
 }
