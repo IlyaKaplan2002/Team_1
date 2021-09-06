@@ -95,7 +95,7 @@
 
   &__item:not(:first-child) {
     margin-top: 8px;
-  }    git push --set-upstream origin program-desktop
+  }
 
   &__title {
     @include font(700, 12px, 20px, 0.08em);
@@ -176,8 +176,8 @@
     &::after {
       content: '';
       position: absolute;
-      top: 400px;
-      left: 0;
+      top: 490px;
+      left: -50px;
       z-index: -1;
 
       background-image: url(../images/desktop/main-pic-desktop.jpg);
@@ -185,7 +185,7 @@
       background-repeat: no-repeat;
 
       opacity: 0.5;
-      width: 672px;
+      width: 674px;
       height: 502px;
 
       @media (min-device-pixel-ratio: 2),
@@ -235,6 +235,7 @@
 
     &__item {
       margin-top: 0;
+      width: 240px;
     }
 
   }
