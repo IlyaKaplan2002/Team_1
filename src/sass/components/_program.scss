@@ -59,7 +59,10 @@
   }
   &__item {
     position: relative;
-    &:not(:first-child) {
+  }
+
+  @media screen and (max-width:1365px) {
+    &__item:not(:first-child) {
       margin-top: 40px;
     }
   }
@@ -80,6 +83,10 @@
     height: 12px;
     border-radius: 180%;
     z-index: 998;
+  }
+
+  &__desktop-border {
+    display: none;
   }
 }
 
@@ -108,6 +115,7 @@
 @media screen and(min-width: 768px) {
   .program {
     padding-bottom: 0;
+
     &::after {
       content: '';
       position: absolute;
@@ -158,3 +166,103 @@
     }
   }
 }
+
+@media screen and (min-width:1366px) {
+  .program {
+    overflow: visible;
+    margin-bottom: 230px;
+    z-index: -2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 400px;
+      left: 0;
+      z-index: -1;
+
+      background-image: url(../images/desktop/main-pic-desktop.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      opacity: 0.5;
+      width: 760px;
+      height: 502px;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/main-pic-desktop@2x.jpg);
+      }
+    }
+
+    &__desktop-border {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: var(--white);
+
+      position: absolute;
+      top: 216px;
+    }
+
+    &__title {
+      font-size: 46px;
+      margin-bottom: 160px;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    &__subtitle::before {
+      width: 17px;
+      height: 17px;
+      left: 0;
+      top: -60px;
+    }
+
+    &__list {
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+    }
+
+    &__list::before {
+      display: none;       
+    }
+
+    &__item {
+      margin-top: 0;
+    }
+
+  }
+
+  .description-list {
+    display: block;
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    &__item {
+      margin: 0;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .point-list {
+    &__item {
+      font-size: 18px;
+      line-height: 157%;
+    }
+  }
+}
+
+

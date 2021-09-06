@@ -88,7 +88,13 @@
 
 @media screen and (min-width: 1366px) {
   .benefits {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transform: translateY(100px);
+
+    &__list {
+      padding: 70px 84px;
+    }
 
     &__item {
       width: 336px;
